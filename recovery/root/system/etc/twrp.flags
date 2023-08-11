@@ -36,5 +36,7 @@
 
 # Dyanmic Partitions
 system           ext4       /system                                               display="System"
+system_ext       ext4       /system_ext                                               display="System_ext"
 vendor           ext4       /vendor                                               display="Vendor"
 product          ext4       /product                                              display="Product"
+odm              ext4       /odm                                               display="Odm"
