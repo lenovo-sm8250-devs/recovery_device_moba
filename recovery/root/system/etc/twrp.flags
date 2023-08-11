@@ -10,17 +10,17 @@
 /modem              emmc      /dev/block/bootdevice/by-name/modem            flags=display="Modem";slotselect;backup=1;flashimg=1
 
 # Verified Boot Partitions
-/vbmeta                	emmc    /dev/block/bootdevice/by-name/vbmeta                               flags=display="VBMeta";slotselect;backup=1;flashimg=1
-/vbmeta_system         	emmc    /dev/block/bootdevice/by-name/vbmeta_system                        flags=display="VBMeta_System";slotselect;backup=1;flashimg=1
+/vbmeta            	emmc      /dev/block/bootdevice/by-name/vbmeta           flags=display="VBMeta";slotselect;backup=1;flashimg=1
+/vbmeta_system     	emmc      /dev/block/bootdevice/by-name/vbmeta_system    flags=display="VBMeta_System";slotselect;backup=1;flashimg=1
 
 # External Partition
-/usb_otg             vfat    /dev/block/sdi1    /dev/block/sdi        flags=fsflags=utf8;display="USB OTG";storage;wipeingui;removable
+/usb_otg            vfat      /dev/block/sdi1    /dev/block/sdi              flags=fsflags=utf8;display="USB OTG";storage;wipeingui;removable
 
 # Additional Partitions
 /apdp               emmc      /dev/block/bootdevice/by-name/apdp
 /devinfo            emmc      /dev/block/bootdevice/by-name/devinfo
 /tz                 emmc      /dev/block/bootdevice/by-name/tz
-/splash             emmc      /dev/block/bootdevice/by-name/splash         flags=display="Splash";slotselect;flashimg=1
+/splash             emmc      /dev/block/bootdevice/by-name/splash           flags=display="Splash";slotselect;flashimg=1
 /dsp                emmc      /dev/block/bootdevice/by-name/dsp
 /devcfg             emmc      /dev/block/bootdevice/by-name/devcfg
 /mdtp               emmc      /dev/block/bootdevice/by-name/mdtp
@@ -29,14 +29,14 @@
 /devinfo            emmc      /dev/block/bootdevice/by-name/devinfo
 /abl                emmc      /dev/block/bootdevice/by-name/abl
 /xbl                emmc      /dev/block/bootdevice/by-name/xbl
-/modemst1           emmc      /dev/block/bootdevice/by-name/modem_st1      flags=display="Modem_ST1";slotselect;backup=1;flashimg=1
-/modemst2           emmc      /dev/block/bootdevice/by-name/modem_st2      flags=display="Modem_ST2";slotselect;backup=1;flashimg=1
-/misc               emmc      /dev/block/bootdevice/by-name/misc           flags=display="Misc";slotselect;backup=1;flashimg=0
-/persist            ext4      /dev/block/bootdevice/by-name/persist        flags=display="Persist";slotselect;backup=1;flashimg=1
+/modemst1           emmc      /dev/block/bootdevice/by-name/modem_st1        flags=display="Modem_ST1";slotselect;backup=1;flashimg=1
+/modemst2           emmc      /dev/block/bootdevice/by-name/modem_st2        flags=display="Modem_ST2";slotselect;backup=1;flashimg=1
+/misc               emmc      /dev/block/bootdevice/by-name/misc             flags=display="Misc";slotselect;backup=1;flashimg=0
+/persist            ext4      /dev/block/bootdevice/by-name/persist          flags=display="Persist";slotselect;backup=1;flashimg=1
 
 # Dyanmic Partitions
-system           ext4       /system                                               display="System"
-system_ext       ext4       /system_ext                                               display="System_ext"
-vendor           ext4       /vendor                                               display="Vendor"
-product          ext4       /product                                              display="Product"
-odm              ext4       /odm                                               display="Odm"
+system              ext4      /system                                        display="System"
+system_ext          ext4      /system_ext                                    display="System_ext"
+vendor              ext4      /vendor                                        display="Vendor"
+product             ext4      /product                                       display="Product"
+odm                 ext4      /odm                                           display="Odm"
