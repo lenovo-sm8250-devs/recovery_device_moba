@@ -14,7 +14,7 @@
 /vbmeta_system     	emmc      /dev/block/bootdevice/by-name/vbmeta_system    flags=display="VBMeta_System";slotselect;backup=1;flashimg=1
 
 # External Partition
-/usb_otg            vfat      /dev/block/sdi1    /dev/block/sdi              flags=fsflags=utf8;display="USB OTG";storage;wipeingui;removable
+/usbstorage       	vfat   		/dev/block/sdg1        /dev/block/sdg     		 flags=fsflags=utf8;display="USB OTG";storage;wipeingui;removable
 
 # Additional Partitions
 /apdp               emmc      /dev/block/bootdevice/by-name/apdp
