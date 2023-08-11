@@ -6,3 +6,7 @@
 #
 
 LOCAL_PATH := device/lenovo/moba
+
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
