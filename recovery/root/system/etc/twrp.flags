@@ -33,3 +33,8 @@
 /modemst2           emmc      /dev/block/bootdevice/by-name/modem_st2      flags=display="Modem_ST2";slotselect;backup=1;flashimg=1
 /misc               emmc      /dev/block/bootdevice/by-name/misc           flags=display="Misc";slotselect;backup=1;flashimg=0
 /persist            ext4      /dev/block/bootdevice/by-name/persist        flags=display="Persist";slotselect;backup=1;flashimg=1
+
+# Dyanmic Partitions
+system           ext4       /system                                               display="System"
+vendor           ext4       /vendor                                               display="Vendor"
+product          ext4       /product                                              display="Product"
