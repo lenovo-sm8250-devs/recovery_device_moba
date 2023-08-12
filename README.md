@@ -10,7 +10,7 @@ The lenovo Legion Pro 5G (codenamed _"moba"_) is a high-end smartphone from leno
 | CPU                   | Octa-core (1x3.09 GHz Cortex-A77 & 3x2.42 GHz Cortex-A77 & 4x1.80 GHz Cortex-A55) |
 | GPU                   | Adreno 650                                                                        |
 | Memory                | 8/12/16 GB LPDDR5 RAM                                                            |
-| Shipped OS            | Android 10 (Legion OS/ ZUI12), Upgradeable to ZUI 13.5 (Android 12)               |
+| Shipped OS            | Android 10 (Legion OS/ ZUI12), Upgradeable to Android 12 (ZUI 13.5)               |
 | Storage               | 128GB/256GB/512GB UFS 3.1                                                         |
 | SIM                   | Dual SIM (Nano-SIM, dual stand-by)                                                |
 | Battery               | Li-Po 5000 mAh (non-removable), 45W(8gb model), 65W(12gb), 90W(16gb) fast charging|
