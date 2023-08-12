@@ -81,10 +81,12 @@ QCOM_BOARD_PLATFORMS += kona
 
 # Recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
-    libion
+    libion \
+    libandroidicu
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libandroidicu.so
 
 # fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
