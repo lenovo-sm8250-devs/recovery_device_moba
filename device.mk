@@ -17,6 +17,10 @@ TARGET_RECOVERY_DEVICE_MODULES += \
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
 
+# Recovery Modules
+PRODUCT_HOST_PACKAGES += \
+    libandroidicu
+
 # qcom decrypt
 PRODUCT_PACKAGES += \
     qcom_decrypt \
