@@ -4,7 +4,7 @@
 
 # mount point    fstype     device                 device2                        flags
 /boot            emmc       /dev/block/bootdevice/by-name/boot                    flags=slotselect
-/system_root     ext4       /dev/block/bootdevice/by-name/system          flags=display="System";backup=1;wipeingui
+/system_root     ext4       /dev/block/mapper/system                               flags=display="System";backup=1;wipeingui
 /dtbo            emmc       /dev/block/bootdevice/by-name/dtbo                    flags=backup=1;display="Dtbo";slotselect;flashimg=1
 /vbmeta          emmc       /dev/block/bootdevice/by-name/vbmeta                  flags=backup=1;display="VBMeta";slotselect;flashimg=1
 /data            f2fs       /dev/block/bootdevice/by-name/userdata                flags=fileencryption=ice:aes-256-cts
@@ -21,8 +21,8 @@
 /bluetooth       emmc       /dev/block/bootdevice/by-name/bluetooth               flags=backup=1;display="Bluetooth";slotselect
 /dsp             ext4       /dev/block/bootdevice/by-name/dsp                     flags=backup=1;display="Dsp";slotselect
 /metadata        ext4       /dev/block/bootdevice/by-name/metadata                flags=backup=1;display="Metadata"
-/keymaster       emmc       /dev/block/bootdevice/by-name/keymaster               flags=slotselect
+/keymaster       emmc       /dev/block/bootdevice/by-name/keymaster               flags=display="keymaster";backup=1;flashimg=1
 
 # Removable storage
 /usb-otg         vfat       /dev/block/sdg1         /dev/block/sdg                flags=display="USB OTG";storage;wipeingui;removable
-
+external_sd      vfat     /dev/block/mmcblk0p1    /dev/block/mmcblk0   flags=display="external_sd";storage;wipeingui;removable;fsflags="utf8"
