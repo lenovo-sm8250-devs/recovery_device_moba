@@ -4,7 +4,8 @@
 
 # mount point    fstype     device                 device2                        flags
 /boot            emmc       /dev/block/bootdevice/by-name/boot                    flags=slotselect
-/system_root     ext4       /dev/block/mapper/system                               flags=display="System";backup=1;wipeingui
+/system_root     ext4       /dev/block/mapper/system                              flags=backup=0
+
 /dtbo            emmc       /dev/block/bootdevice/by-name/dtbo                    flags=backup=1;display="Dtbo";slotselect;flashimg=1
 /vbmeta          emmc       /dev/block/bootdevice/by-name/vbmeta                  flags=backup=1;display="VBMeta";slotselect;flashimg=1
 /data            f2fs       /dev/block/bootdevice/by-name/userdata                flags=fileencryption=ice:aes-256-cts
