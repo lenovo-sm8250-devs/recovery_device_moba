@@ -60,5 +60,6 @@
 /devcfg           emmc     /dev/block/bootdevice/by-name/devcfg       flags=display="devcfg";backup=1;flashimg=1
 
 
+/external_sd      vfat     /dev/block/mmcblk0p1  /dev/block/mmcblk0   flags=display="external_sd";storage;wipeingui;removable;fsflags="utf8"
 /usb-otg          vfat     /dev/block/sdg1  /dev/block/sdg            flags=display="usb-otg";storage;wipeingui;removable;fsflags="utf8"
 
