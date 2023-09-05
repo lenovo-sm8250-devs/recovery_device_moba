@@ -23,6 +23,11 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder
+
 # qcom decrypt
 PRODUCT_PACKAGES += \
     qcom_decrypt \
