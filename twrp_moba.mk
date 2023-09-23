@@ -19,7 +19,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, device/lenovo/moba/device.mk)
 
 PRODUCT_DEVICE := moba
-PRODUCT_NAME := lineage_moba
+PRODUCT_NAME := twrp_moba
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo L79031
 PRODUCT_MANUFACTURER := lenovo
