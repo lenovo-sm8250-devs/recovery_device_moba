@@ -5,15 +5,15 @@
 # Currently we dont have e2fsck compiled. So fs check would failed.
 
 # <mount_point>  <fstype>  <device>        <device2>                  <flags>
-/data             f2fs     /dev/block/bootdevice/by-name/userdata     flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption
+/data             f2fs     /dev/block/bootdevice/by-name/userdata     flags=fileencryption=ice;wrappedkey;keydirectory=/metadata/vold/metadata_encryption
 /system_root      ext4     /dev/block/mapper/system                   flags=backup=0
 
 /vendor           ext4     /dev/block/mapper/vendor                   flags=display="vendor"
 /product          ext4     /dev/block/mapper/product                  flags=display="product"
 /odm              ext4     /dev/block/mapper/odm                      flags=display="odm"
-/system_ext              ext4     /dev/block/mapper/system_ext                      flags=display="system_ext"
+/system_ext       ext4     /dev/block/mapper/system_ext               flags=display="system_ext"
 /cache            ext4     /dev/block/bootdevice/by-name/cache        flags=backup=1;wipeingui;wipeduringfactoryreset
-#/system_root      ext4     /dev/block/mapper/system                   flags=backup=0;logical
+#/system_root     ext4     /dev/block/mapper/system                   flags=backup=0;logical
 /super            emmc     /dev/block/bootdevice/by-name/super        flags=display="super";backup=1;flashimg=1
 /boot             emmc     /dev/block/bootdevice/by-name/boot         flags=backup=1;flashimg=1
 /dtbo             emmc     /dev/block/bootdevice/by-name/dtbo         flags=display="dtbo";backup=1;flashimg=1
@@ -26,8 +26,8 @@
 /bt_firm_image    emmc     /dev/block/bootdevice/by-name/bluetooth    flags=display="bluetooth";flashimg=1
 /dsp              ext4     /dev/block/bootdevice/by-name/dsp          flags=display="dsp";backup=1
 /dsp_image        emmc     /dev/block/bootdevice/by-name/dsp          flags=display="dsp";flashimg=1
-#/cust             ext4     /dev/block/bootdevice/by-name/cust         flags=display="cust";backup=1
-#/cust_image       emmc     /dev/block/bootdevice/by-name/cust         flags=display="cust";flashimg=1
+#/cust            ext4     /dev/block/bootdevice/by-name/cust         flags=display="cust";backup=1
+#/cust_image      emmc     /dev/block/bootdevice/by-name/cust         flags=display="cust";flashimg=1
 /metadata         ext4     /dev/block/bootdevice/by-name/metadata     flags=display="metadata";backup=1;wrappedkey
 /metadata_image   emmc     /dev/block/bootdevice/by-name/metadata     flags=display="metadata";flashimg=1
 /logfs            vfat     /dev/block/bootdevice/by-name/logfs        flags=display="logfs";backup=1
@@ -50,7 +50,7 @@
 /efs2             emmc     /dev/block/bootdevice/by-name/modemst2     flags=backup=1;subpartitionof=/efs1
 
 /abl              emmc     /dev/block/bootdevice/by-name/abl          flags=display="abl";backup=1;flashimg=1
-#/xbl              emmc     /dev/block/bootdevice/by-name/xbl          flags=display="xbl";backup=1;flashimg=1
+#/xbl             emmc     /dev/block/bootdevice/by-name/xbl          flags=display="xbl";backup=1;flashimg=1
 /msadp            emmc     /dev/block/bootdevice/by-name/msadp        flags=display="msadp";backup=1;flashimg=1
 /apdp             emmc     /dev/block/bootdevice/by-name/apdp         flags=display="apdp";backup=1;flashimg=1
 /cmnlib64         emmc     /dev/block/bootdevice/by-name/cmnlib64     flags=display="cmnlib64";backup=1;flashimg=1
@@ -60,6 +60,5 @@
 /devcfg           emmc     /dev/block/bootdevice/by-name/devcfg       flags=display="devcfg";backup=1;flashimg=1
 
 
-/external_sd      vfat     /dev/block/mmcblk0p1  /dev/block/mmcblk0   flags=display="external_sd";storage;wipeingui;removable;fsflags="utf8"
 /usb-otg          vfat     /dev/block/sdg1  /dev/block/sdg            flags=display="usb-otg";storage;wipeingui;removable;fsflags="utf8"
 
