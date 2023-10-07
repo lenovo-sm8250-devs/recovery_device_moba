@@ -5,7 +5,7 @@
 # Currently we dont have e2fsck compiled. So fs check would failed.
 
 # <mount_point>  <fstype>  <device>        <device2>                  <flags>
-/data             f2fs     /dev/block/bootdevice/by-name/userdata     flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption
+/data             f2fs     /dev/block/bootdevice/by-name/userdata     flags=fileencryption=ice;wrappedkey;keydirectory=/metadata/vold/metadata_encryption
 /system_root      ext4     /dev/block/mapper/system                   flags=backup=0
 
 /vendor           ext4     /dev/block/mapper/vendor                   flags=display="vendor"
