@@ -10,7 +10,7 @@
 
 /vendor           ext4     /dev/block/mapper/vendor                   flags=display="vendor"
 /product          ext4     /dev/block/mapper/product                  flags=display="product"
-/odm              ext4     /dev/block/mapper/odm                      flags=display="odm"
+#/odm              ext4     /dev/block/mapper/odm                      flags=display="odm"
 /system_ext              ext4     /dev/block/mapper/system_ext                      flags=display="system_ext"
 /cache            ext4     /dev/block/bootdevice/by-name/cache        flags=backup=1;wipeingui;wipeduringfactoryreset
 #/system_root      ext4     /dev/block/mapper/system                   flags=backup=0;logical
