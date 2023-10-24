@@ -11,7 +11,7 @@
 /vendor           ext4     /dev/block/mapper/vendor                   flags=display="vendor"
 /product          ext4     /dev/block/mapper/product                  flags=display="product"
 #/odm              ext4     /dev/block/mapper/odm                      flags=display="odm"
-/system_ext              ext4     /dev/block/mapper/system_ext                      flags=display="system_ext"
+/system_ext       ext4     /dev/block/mapper/system_ext                      flags=display="system_ext"
 /cache            ext4     /dev/block/bootdevice/by-name/cache        flags=backup=1;wipeingui;wipeduringfactoryreset
 #/system_root      ext4     /dev/block/mapper/system                   flags=backup=0;logical
 /super            emmc     /dev/block/bootdevice/by-name/super        flags=display="super";backup=1;flashimg=1
@@ -60,5 +60,5 @@
 /devcfg           emmc     /dev/block/bootdevice/by-name/devcfg       flags=display="devcfg";backup=1;flashimg=1
 
 
-/usb-otg          vfat     /dev/block/sdg1  /dev/block/sdg            flags=display="usb-otg";storage;wipeingui;removable;fsflags="utf8"
+/usb_otg          vfat     /dev/block/sdg1  /dev/block/sdg            flags=display="usb-otg";storage;wipeingui;removable;fsflags="utf8"
 
