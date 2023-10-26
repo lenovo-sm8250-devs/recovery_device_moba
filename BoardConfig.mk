@@ -110,6 +110,7 @@ BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_USES_METADATA_PARTITION := true
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Dynamic/Logical Partitions
@@ -127,7 +128,7 @@ BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
 
 # System as root
 #BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
-#BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist
+BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist
 BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Additional binaries & libraries needed for recovery
