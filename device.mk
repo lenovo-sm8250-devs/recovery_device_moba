@@ -18,6 +18,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_HOST_PACKAGES += \
     libandroidicu
 
+# vintf manifest override
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
