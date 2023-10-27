@@ -13,7 +13,7 @@
 
 # Verified Boot Partitions
 /vbmeta           emmc     /dev/block/bootdevice/by-name/vbmeta       flags=display="vbmeta";backup=1;flashimg=1
-/vbmeta_system    emmc     /dev/block/bootdevice/by-name/vbmeta_system flags=display="vbmta_system";backup=1;flashimg=1
+/vbmeta_system    emmc     /dev/block/bootdevice/by-name/vbmeta_system flags=display="vbmeta_system";backup=1;flashimg=1
 
 # External Partition
 /usb_otg          vfat     /dev/block/sdg1  /dev/block/sdg            flags=display="USB OTG";storage;wipeingui;removable;fsflags="utf8"
